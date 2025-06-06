@@ -34,8 +34,9 @@ function CodeExplainer() {
   };
 
   return (
+    <div>
     <div className="explainer-container">
-      <h1>🧠✨ Kawaii Code Explainer ✨💻</h1>
+      <h1>✨ CODE NO TOMO ✨</h1>
       <textarea
         placeholder="Paste your magical code here... 💫"
         value={code}
@@ -43,15 +44,19 @@ function CodeExplainer() {
         rows={10}
       />
       <button onClick={handleExplain} disabled={loading || !code.trim()}>
-        {loading ? "🔮 Explaining..." : "🌸 Explain with Magic"}
+        {loading ? "🔮 Explaining..." : "💻 Explain with Magic"}
       </button>
+    </div>
 
+
+      <div className="output-container">
       {explanation && (
         <div className="output-box">
           <h2>🌟 Explanation:</h2>
           <pre>{explanation}</pre>
         </div>
       )}
+      </div>
 
       {error && <p className="error">{error}</p>}
     </div>
