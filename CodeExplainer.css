@@ -4,9 +4,10 @@
   max-width: 700px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #fff0f6;
+  background-color: rgb(102, 194, 255);
   border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 182, 193, 0.4);
+  border: 6px solid #130608;
+  box-shadow: 0 0 6px rgb(0, 0, 0);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   text-align: center;
@@ -14,33 +15,35 @@
 }
 
 h1 {
+  font-family: 'Audiowide', cursive;
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #d63384;
+  color: #afd8eb;
 }
 
 textarea {
   width: 100%;
   min-height: 160px;
-  padding: 1rem;
-  border: 2px solid #ffb3c1;
+  margin-top: 0.5rem;
+  padding: 0rem;
+  border: 6px solid #130608;
   border-radius: 12px;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: 'Courier New', Courier, monospace;
-  background-color: #fff;
+  background-color: #ffffff;
   resize: vertical;
   margin-bottom: 1rem;
   transition: border-color 0.3s ease;
 }
 
 textarea:focus {
-  border-color: #ff6f91;
+  border-color: #008fb3;
   outline: none;
 }
 
 button {
   padding: 0.75rem 1.5rem;
-  background-color: #ff6f91;
+  background-color: #18a1e0;
   color: white;
   border: none;
   border-radius: 10px;
@@ -50,40 +53,54 @@ button {
 }
 
 button:disabled {
-  background-color: #ffcad4;
+  background-color: #0180ca;
   cursor: not-allowed;
 }
 
 button:hover:enabled {
-  background-color: #ff4d6d;
+  background-color: #005a96;
   transform: scale(1.03);
 }
 
+.output-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: rgb(102, 194, 255);
+  border-radius: 20px;
+  border: 6px solid #130608;
+  box-shadow: 0 0 6px rgb(0, 0, 0);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  text-align: center;
+  animation: fadeIn 1s ease;
+}
+
 .output-box {
-  margin-top: 2rem;
-  padding: 1.5rem;
-  background-color: #ffe0ec;
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background-color: rgb(253, 253, 253);;
   border-radius: 15px;
-  border: 1px dashed #ff8fab;
+  border: 6px solid #000000;
   text-align: left;
 }
 
 .output-box h2 {
-  color: #d63384;
-  margin-bottom: 1rem;
+  color: #59b8e4;
+  margin-bottom: 0.5rem;
 }
 
 pre {
   white-space: pre-wrap;
   word-break: break-word;
   font-family: 'Courier New', Courier, monospace;
-  font-size: 0.95rem;
-  color: #222;
+  font-size: 1.5rem;
+  color: #000000;
 }
 
 .error {
   color: red;
-  margin-top: 1rem;
+  margin-top: 2rem;
   font-weight: bold;
 }
 
